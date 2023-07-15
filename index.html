@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Simulador de Préstamos</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <h1>Simnulador interactivo compra venta de vehiculos pesados</h1>
+    <form>
+        <label for="loan-amount">Cantidad del prestamo (entre 0 y 10 milliones de pesos ):</label>
+        <input type="number" id="loan-amount" min="0" max="10000000" required>
+
+        <label for="loan-terms">Cantidad de cuotas (entre 12 y 72):</label>
+        <input type="number" id="loan-terms" min="12" max="72" required>
+
+        <input type="submit" value="Calcular" onclick="calcularPrestamo()">
+    </form>
+    <div id="result"></div>
+    <script src="index.js"></script>
+</body>
+
+</html>
