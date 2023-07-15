@@ -5,7 +5,7 @@ function calcularPrestamo(event) {
     const cuotasInput = document.getElementById("loan-terms");
     const cantidad = parseFloat(cantidadInput.value);
     const cuotas = parseInt(cuotasInput.value);
-    const tasaInteres = 152;
+    const tasaInteres = 152;(tasaDeInteresEfectivaAnual)
 
     if (cantidad >= 1 && cantidad <= 10000000 && cuotas >= 12 && cuotas <= 72) {
         const tasaMensual = tasaInteres / 100 / 12;
